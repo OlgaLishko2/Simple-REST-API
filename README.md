@@ -42,15 +42,21 @@ DELETE /users/:id – delete user
 Expenses
 
 GET /expenses – get all expenses
+
 POST /expenses – create expense
+
 PUT /expenses/:id – update expense
+
 DELETE /expenses/:id – delete expense
 
 Income
 
 GET /income – get all income
+
 POST /income – create income
+
 PUT /income/:id – update income
+
 DELETE /income/:id – delete income
 
 
