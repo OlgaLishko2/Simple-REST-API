@@ -99,8 +99,11 @@ Income (POST /income)
 Dependencies:
 
 Node.js
+
 Express
+
 dotenv (for environment variables)
 
 Install with:
+
 npm install express dotenv
