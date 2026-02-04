@@ -11,10 +11,12 @@ Installation
 Clone the repo:
 
 git clone https://github.com/OlgaLishko2/Simple-REST-API
+
 cd SimpleRESTAPI
 
 
 Install dependencies:
+
 npm install
 
 
