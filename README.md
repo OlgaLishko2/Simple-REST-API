@@ -32,8 +32,11 @@ Endpoints
 Users
 
 GET /users – get all users
+
 POST /users – create user
+
 PUT /users/:id – update user
+
 DELETE /users/:id – delete user
 
 Expenses
