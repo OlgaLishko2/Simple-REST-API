@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());  //middleware > read JSON > put to req.body
 
-const PORT = process.env.PORT;
+// const PORT = process.env.PORT;
 
 
 
@@ -38,3 +38,6 @@ app.use("/income", incomeRoutes);
 // app.listen(PORT, () => {
 //   console.log("Server running on port " + PORT);
 // });
+
+
+module.exports = app;
