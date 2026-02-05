@@ -4,9 +4,10 @@ const db = require("../config/firebase");
 // GET 
 const getUsers = async (req, res) => {
   try {
-    const usersCol = db.collection("users");
-    const snapshot = await usersCol.get();
-    const users = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    const snapshot = await db.collection("users").get();
+    // const snapshot = await usersCol.get();
+    const users = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })); 
+    console.log(users)
     res.json(users);
   } catch (error) {
     res.status(500).json({ error: error.message });
