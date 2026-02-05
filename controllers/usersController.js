@@ -6,7 +6,7 @@ const getUsers = async (req, res) => {
   try {
     const usersCol = db.collection("users");
     const snapshot = await usersCol.get();
-    const users = usersCol.docs.map(doc => ({ id: doc.id, ...doc.data() })); 
+    const users = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })); 
     console.log(users)
     res.json(users);
   } catch (error) {
